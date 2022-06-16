@@ -9,7 +9,10 @@ import { addExpense } from "./actions/expenses";
 //import { setTextFilter } from "./actions/filter";
 import getVisibleExpenses from "./selectors/expenses";
 //import expenses from "./reducers/expenses";
+import './firebase/firebase'
 const store = configureStore();
+//require("./firebase/firebase");
+// import "D:\React-course-projects\Expensify-App\src\firebase\firebase.js";
 //console.log(dispatcher);
 // store.dispatch(addExpense({ description: "water bill", amount: 15000 }));
 // store.dispatch(addExpense({ description: "gas bill", amount: 2010 ,createdAt:105}));
