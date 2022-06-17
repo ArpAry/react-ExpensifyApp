@@ -11,6 +11,7 @@ import getVisibleExpenses from "./selectors/expenses";
 //import expenses from "./reducers/expenses";
 import './firebase/firebase'
 const store = configureStore();
+import "./playground/promises";
 //require("./firebase/firebase");
 // import "D:\React-course-projects\Expensify-App\src\firebase\firebase.js";
 //console.log(dispatcher);

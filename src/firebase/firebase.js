@@ -24,4 +24,13 @@ const analytics = getAnalytics(app);
 
 const db = getDatabase()
 
-set(ref(db), {name: 'Arpit'})
+set(ref(db), {name: 'Arpit',
+age:21,
+location:{
+  city:"Ghaziabad",
+  country:"India"
+}
+});
+
+//set(ref(db),("attributes"),{height :5.5,weight:70});
+//set(ref(db).child('age').set(30));
