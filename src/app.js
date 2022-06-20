@@ -9,7 +9,7 @@ import { addExpense } from "./actions/expenses";
 //import { setTextFilter } from "./actions/filter";
 import getVisibleExpenses from "./selectors/expenses";
 //import expenses from "./reducers/expenses";
-import './firebase/firebase'
+import "./firebase/firebase";
 const store = configureStore();
 //import "./playground/promises";
 
@@ -18,11 +18,9 @@ const store = configureStore();
 //console.log(visibleExpenses);
 
 const jsx = (
- 
-    <Provider store={store}>
+  <Provider store={store}>
     <AppRouterFun />
   </Provider>
-
 );
 const appRoot = document.getElementById("app");
 ReactDOM.render(jsx, appRoot);

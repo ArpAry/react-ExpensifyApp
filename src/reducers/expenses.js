@@ -1,7 +1,6 @@
-
 // Expensify  Reducer
- const expensifyDefault = [];
-export default  (state = expensifyDefault, action) => {
+const expensifyDefault = [];
+export default (state = expensifyDefault, action) => {
   switch (action.type) {
     case "ADDEXPENSE":
       return [...state, action.expense];

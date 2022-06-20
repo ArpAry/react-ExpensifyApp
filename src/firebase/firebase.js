@@ -1,6 +1,16 @@
 // Connect to Firebase v9 - modular
-import {initializeApp} from 'firebase/app'
-import {getDatabase, ref,get,query,child,update,remove, set,onValue} from 'firebase/database'
+import { initializeApp } from "firebase/app";
+import {
+  getDatabase,
+  ref,
+  get,
+  query,
+  child,
+  update,
+  remove,
+  set,
+  onValue,
+} from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDjHgo6-9N-JPSb0jpeDDRcu6ZclJDgPx8",
@@ -10,9 +20,8 @@ const firebaseConfig = {
   storageBucket: "expensifyappp.appspot.com",
   messagingSenderId: "255135107517",
   appId: "1:255135107517:web:05758a647718606d92ead4",
-  measurementId: "G-E2YNWT1X8B"
+  measurementId: "G-E2YNWT1X8B",
 };
-
 
 // Initialize Firebase v9
 const app = initializeApp(firebaseConfig);
@@ -22,34 +31,28 @@ const dbRef = ref(db);
 //const age=ref(db,"age");
 //const database=firebase.database();
 
-
-
-
-
-
-
-// set(dbRef, {name: 'Arpit',
-// age:21,
-// job:{
-// company:"amazon",
-// title:"SDE"
-// },
-// location:{
-//   city:"Ghaziabad",
-//   country:"India"
-// }
-// }).then(()=>{
-//   console.log("Datat  is Saved");
-// }).catch((e)=>{
-//   console.log("This is failed ",e);
-// });
-
+set(dbRef, {
+  name: "Arpit",
+  age: 21,
+  job: {
+    company: "amazon",
+    title: "SDE",
+  },
+  location: {
+    city: "Ghaziabad",
+    country: "India",
+  },
+})
+  .then(() => {
+    console.log("Datat  is Saved");
+  })
+  .catch((e) => {
+    console.log("This is failed ", e);
+  });
 
 //child_remove_Event
 //child_Changed_Event
 //child_Added_Event
-
-
 
 //*****************/
 //removing data  from database
